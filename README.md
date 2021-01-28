@@ -2,6 +2,14 @@
 
 This repository is used to do backup for the source file of my personal blog page [lk668](https://lk668.github.io). I use `hexo` to build the blog website. And choose [yilia](https://github.com/litten/hexo-theme-yilia) themes.
 
+## Preparation
+
+Install the npm depended packages.
+
+```bash
+$ npm install
+```
+
 ## Quick Start
 
 ### Create a new post
