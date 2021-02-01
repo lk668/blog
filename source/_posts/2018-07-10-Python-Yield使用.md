@@ -2,7 +2,7 @@
 title: Python yield使用
 date: 2018-07-10
 tags:
-    - Python
+    - python
 ---
 
 本文详细介绍一下Python中yield关键字的使用

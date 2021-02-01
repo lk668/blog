@@ -2,8 +2,8 @@
 title: OpenStack Designate简介
 date: 2019-03-04
 tags:
-    - OpenStack
-    - Designate
+    - openstack
+    - designate
 ---
 本文主要简单介绍下Designate的部署过程,Designate与后端dns server的同步过程以及涉及到的DNS相关内容
 
