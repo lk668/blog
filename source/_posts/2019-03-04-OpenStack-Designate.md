@@ -180,7 +180,7 @@ openstack recordset set 27b0d2ac-d856-4ef7-8a6d-3a9e153e4609 e5d26292-207e-43f2-
 ```
 
 ## 3. Designate 架构分析
-![](/img/designate/designate-architecture.png)
+![](/img/openstack/designate/designate-architecture.png)
 
 **注:** designate-worker取代了之前的designate-pool-manager, designate-producer取代了之前的designate-zone-manager
 
@@ -202,7 +202,7 @@ openstack recordset set 27b0d2ac-d856-4ef7-8a6d-3a9e153e4609 e5d26292-207e-43f2-
 
 假设我的电脑配置的DNS server是8.8.8.8，我需要访问 www.zhihu.com 首先我的电脑要获取 www.zhihu.com 的IP地址，需要经过下面所示的步骤：
 
-![](/img/designate/designate-dns-1.png)
+![](/img/openstack/designate/designate-dns-1.png)
 
  1. 向8.8.8.8请求获取 www.zhihu.com 的IP地址。如果8.8.8.8包含了 www.zhihu.com 的IP地址记录，则直接跳到步骤8。
  2. 8.8.8.8所在的Cache DNS server并没有 www.zhihu.com 的记录，所以它向Authoritative DNS server请求数据。首先发往Root DNS server，这是全球共有的13个逻辑服务器，每一个是由一个集群构成。
@@ -226,7 +226,7 @@ NOTIFY：用于Master向Slave通知区域信息变更。默认使用udp传输，
 
 Master与Slave之间使用DNS NOTIFY机制同步数据过程
 
-![](/img/designate/designate-dns-2.png)
+![](/img/openstack/designate/designate-dns-2.png)
 
 1. 当Master区域信息变更后，向Slave发起notify的请求
 2. Slave响应notify请求
