@@ -122,4 +122,4 @@ jsonContent:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: 'https://github.com/lk668/lk668.github.io'
+  repo: 'git@github.com:lk668/lk668.github.io.git'
